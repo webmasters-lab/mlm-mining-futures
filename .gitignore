@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+*.log
+package-lock.json
+
+# React
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+*.local
