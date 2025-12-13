@@ -1,17 +1,300 @@
-# Node.js
+# Node.js #
+############
 node_modules/
-*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# React
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# React #
+##########
+# build outputs
 build/
-coverage/
+dist/
+.coverage/
+.nyc_output/
 
-# IDE
-.vscode/
+# production
+*.production.env
+*.prod.env
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE #
+########
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .idea/
 *.swp
+*.swo
+*~
+.project
+*.sublime-workspace
 
-# Environment
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment #
+###############
 .env
-*.local
+.env.local
+.env.*.local
+!.env.example
+.env.test
+.env.development
+.env.staging
+.env.production
+
+# Firebase #
+#############
+.firebase/
+.firebaserc
+
+# Testing #
+############
+/jest-cache/
+/cypress/videos/
+/cypress/screenshots/
+
+# Docker #
+###########
+.dockerignore
+docker-compose.override.yml
+
+# Deployment #
+###############
+.cache/
+.awcache/
+
+# Serverless directories
+.serverless/
+
+# TernJS port file
+.tern-port
+
+# Cache files #
+################
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next/
+out/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+# Comment in the public line if using a Gatsby site not using the default 'public' folder
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static/
+
+# Rollup cache
+.rollup.cache/
+
+# Vuepress build output
+.vuepress/dist
+
+# Temporary folders #
+#####################
+tmp/
+temp/
+
+# Custom #
+###########
+# Application specific files
+config/credentials*.yml
+config/initializers/secret_token.rb
+
+# Database files #
+###################
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files #
+#################
+*.bak
+*.backup
+
+# SSL certificates #
+#####################
+*.pem
+*.crt
+*.key
+
+# Documentation #
+#################
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Performance monitoring #
+##########################
+*.cpuprofile
+.heapprofile
+
+# Visual Studio Code #
+#######################
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Windows #
+###########
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# MacOS #
+##########
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux #
+##########
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# React Native #
+#################
+# React Native
+ios/build/
+ios/Pods/
+android/.gradle/
+android/app/build/
+android/build/
+*.keystore
+
+# Expo
+.expo/
+.expo-shared/
+
+# ESLint #
+###########
+.eslintcache
+
+# Prettier #
+############
+.prettiercache
+
+# Webpack #
+############
+.webpack/
+.stats.json
+
+# Parcel #
+###########
+.parcel-cache/
+dist/
