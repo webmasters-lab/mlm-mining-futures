@@ -1,1 +1,133 @@
-{\n  \"name\": \"mlm-mining-futures\",\n  \"version\": \"1.0.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"react\": \"^17.0.2\",\n    \"react-dom\": \"^17.0.2\",\n    \"redux\": \"^4.1.0\",\n    \"react-redux\": \"^7.2.6\",\n    \"axios\": \"^0.21.1\",\n    \"socket.io-client\": \"^4.0.1\",\n    \"firebase\": \"^9.6.1\",\n    \"@stripe/stripe-react-native\": \"^0.9.0\"\n  },\n  \"devDependencies\": {\n    \"jest\": \"^27.2.0\",\n    \"@testing-library/react\": \"^12.0.0\",\n    \"@testing-library/jest-dom\": \"^5.16.4\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  }\n}
+{
+  "name": "mlm-mining-futures",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MLM cryptocurrency mining futures trading platform",
+  "author": "Your Name/Company",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redux": "^4.1.2",
+    "react-redux": "^7.2.8",
+    "@reduxjs/toolkit": "^1.8.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "axios": "^0.27.2",
+    "socket.io-client": "^4.5.1",
+    "firebase": "^9.9.2",
+    "@stripe/stripe-js": "^1.39.0",
+    "@stripe/react-stripe-js": "^1.16.0",
+    "react-router-dom": "^6.3.0",
+    "react-hook-form": "^7.34.2",
+    "yup": "^0.32.11",
+    "date-fns": "^2.29.1",
+    "chart.js": "^3.9.1",
+    "react-chartjs-2": "^4.3.1",
+    "recharts": "^2.1.14",
+    "material-ui": "^4.12.4",
+    "@mui/material": "^5.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "clsx": "^1.2.1",
+    "react-helmet-async": "^1.3.0",
+    "react-toastify": "^9.0.8",
+    "i18next": "^21.9.1",
+    "react-i18next": "^11.18.5",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2",
+    "crypto-js": "^4.1.1",
+    "jwt-decode": "^3.1.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "jest": "^27.5.1",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.3",
+    "@types/react": "^17.0.50",
+    "@types/react-dom": "^17.0.17",
+    "@types/react-redux": "^7.1.24",
+    "typescript": "^4.8.4",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "prettier": "^2.7.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "dotenv": "^16.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:watch": "react-scripts test --watch",
+    "test:coverage": "react-scripts test --coverage",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css}",
+    "precommit": "lint-staged",
+    "dev": "npm-run-all --parallel start",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{json,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/reportWebVitals.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/mlm-mining-futures.git"
+  },
+  "keywords": [
+    "mlm",
+    "crypto",
+    "mining",
+    "trading",
+    "react",
+    "blockchain",
+    "futures"
+  ],
+  "bugs": {
+    "url": "https://github.com/your-username/mlm-mining-futures/issues"
+  },
+  "homepage": "https://github.com/your-username/mlm-mining-futures#readme"
+}
